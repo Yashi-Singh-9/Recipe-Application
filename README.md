@@ -45,11 +45,11 @@ Users should be able to:
 
 **Mobile Design**
 
-<img src="designs/mobile-design.png" height="750px"> 
+<img src="designs/mobile-design.png" height="750px" width="auto"> 
 
 ### Links
 
-🌍 **Live Site URL**: [Live Demo](https://your-live-url.netlify.app)
+🌍 **Live Site URL**: [Live Demo](https://yashi-singh-9.github.io/Recipe-Application/)
 
 ---
 
