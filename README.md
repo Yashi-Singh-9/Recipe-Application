@@ -150,7 +150,7 @@ Just open the `index.html` file in your browser or use a Live Server plugin in V
 
 ## 👤 Author
 
-LinkedIn : ![Yashi Singh](https://www.linkedin.com/in/yashi-singh-b4143a246)
+LinkedIn : [Yashi Singh](https://www.linkedin.com/in/yashi-singh-b4143a246)
 
 ---
 
