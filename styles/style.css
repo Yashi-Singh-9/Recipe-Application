@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-weight: 500;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+header .logo-info {
+  display: flex;
+  align-items: center;
+}
+header .logo-info .logo {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+header .logo-info .logo-name {
+  font-size: 1.25rem;
+}
+header a,
+header a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+main {
+  border-top: 2px solid #efe7eb;
+}
+main .hero {
+  background-color: #e5e7eb;
+  padding: 2.3rem;
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media (max-width: 1120px) {
+  main .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+main .hero div {
+  max-width: 600px;
+}
+@media (max-width: 1120px) {
+  main .hero div {
+    max-width: 100%;
+  }
+}
+main .hero div h1 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+main .hero div p {
+  font-size: 1.35rem;
+  max-width: 335px !important;
+  width: 100% !important;
+  margin-bottom: 2rem;
+}
+@media (max-width: 1120px) {
+  main .hero div p {
+    max-width: 100% !important;
+    align-items: center;
+  }
+}
+main .hero div a,
+main .hero div a:visited {
+  text-decoration: none;
+  padding: 0.75rem;
+  border-radius: 0.6rem;
+  color: #fff;
+  background-color: #f79f1a;
+  transition: 0.2s ease;
+}
+main .hero div a:hover,
+main .hero div a:visited:hover {
+  background-color: #f8a931;
+}
+main .hero img {
+  max-width: 400px;
+}
+main .recipe-info {
+  padding: 3rem;
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+main .recipe-info .recipe-title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+main .recipe-info .popular {
+  font-size: 1.15rem;
+}
+main .recipe-info .recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+main .recipe-info .recipes-grid .recipe-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+main .recipe-info .recipes-grid .recipe-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.6rem;
+}
+main .recipe-info .recipes-grid .recipe-card .recipe-name {
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+main .recipe-info .recipes-grid .recipe-card .time-taking {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  margin: 0.6rem auto;
+}
+main .recipe-info .recipes-grid .recipe-card .time-taking .icon {
+  width: 20px;
+  height: 20px;
+}
+main .recipe-info .recipes-grid .recipe-card .time-taking .icon:not(:first-child) {
+  margin-left: 10px;
+}
+main .recipe-info .recipes-grid .recipe-card .button,
+main .recipe-info .recipes-grid .recipe-card .button:visited {
+  text-decoration: none;
+  color: #fff;
+  background-color: #f79f1a;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  max-width: 80px;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+main .recipe-details {
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 920px;
+  width: 100%;
+}
+main .recipe-details .recipe-name {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+main .recipe-details .time-taking {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #efe7eb;
+}
+main .recipe-details .time-taking .icon {
+  width: 20px;
+  height: 20px;
+}
+main .recipe-details .time-taking .icon:not(:first-child) {
+  margin-left: 0.8rem;
+}
+main .recipe-details img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+main .recipe-details h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+main .ingredients {
+  margin-bottom: 1.5rem;
+}
+main .ingredients label {
+  display: block;
+  margin-bottom: 0.8rem;
+}
+main .ingredients input {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  accent-color: #f79f1a;
+  cursor: pointer;
+}
+main .ingredients input span {
+  transition: text-decoration 0.3s ease;
+}
+main .ingredients input:checked + span {
+  text-decoration: line-through;
+  color: #808080;
+}
+main ol {
+  list-style: none;
+  counter-reset: step;
+}
+main ol li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+main ol li::before {
+  content: counter(step) ".";
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  background-color: #f79f1a;
+  color: #fff;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+}

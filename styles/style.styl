@@ -1,0 +1,242 @@
+color-1 = #ffffff
+color-2=  #E5E7EB
+color-3 = #f79f1a
+color-4 = #000000
+color-5 = #efe7eb
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap")
+
+* 
+    margin 0
+    padding 0
+    box-sizing border-box
+
+html
+    scroll-behavior smooth
+
+body 
+    font-family 'Montserrat', sans-serif
+    background-color color-1
+    color color-4
+
+header
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+    align-items center
+    padding 1rem
+    font-weight 500
+    max-width 1300px
+    width 100%
+    margin 0 auto
+
+    .logo-info
+        display flex
+        align-items center
+
+        .logo
+            width 90px
+            height 90px
+            object-fit cover
+
+        .logo-name
+            font-size 1.25rem           
+
+    a,
+    a:visited
+        color inherit
+        text-decoration none
+
+main 
+    border-top 2px solid color-5
+
+    .hero 
+        background-color color-2
+        padding 2.3rem
+        display flex
+        gap 3rem
+        flex-wrap wrap
+        justify-content space-around
+
+        @media (max-width: 1120px)
+            flex-direction column-reverse
+            align-items center 
+
+        div 
+            max-width 600px
+
+            @media (max-width: 1120px)
+                max-width 100%
+
+            h1 
+                font-size 3.2rem
+                font-weight 500
+                margin-bottom 1rem
+
+            p 
+                font-size 1.35rem
+                max-width 335px !important
+                width 100% !important
+                margin-bottom 2rem
+
+                @media (max-width: 1120px)
+                    max-width 100% !important
+                    align-items center
+
+            a,
+            a:visited
+                text-decoration none
+                padding 0.75rem
+                border-radius 0.6rem
+                color color-1
+                background-color color-3
+                transition 0.2s ease
+
+                &:hover 
+                    background-color lighten(color-3, 10%)
+
+        img 
+            max-width 400px
+
+    .recipe-info
+        padding 3rem
+        max-width 1200px
+        width 95%
+        margin 0 auto
+
+        .recipe-title
+            font-size 2rem
+            font-weight 500
+            margin-bottom 0.5rem
+
+        .popular
+            font-size 1.15rem
+
+        .recipes-grid 
+            display grid
+            grid-template-columns repeat(auto-fit, minmax(300px, 1fr))
+            gap 1rem
+            padding 2rem
+            
+            .recipe-card 
+                background color-1
+                border-radius 10px
+                padding 1rem
+                box-shadow 0 2px 8px rgba(0,0,0,0.6)
+            
+                img 
+                    width 100%
+                    border-radius 10px
+                    margin-bottom 0.6rem
+
+                .recipe-name
+                    font-weight 500
+                    margin-bottom 0.4rem
+
+                .time-taking
+                    display flex    
+                    flex-wrap wrap
+                    gap 0.2rem
+                    margin 0.6rem auto
+
+                    .icon 
+                        width 20px
+                        height 20px
+
+                        &:not(:first-child)
+                            margin-left 10px
+                        
+                .button,
+                .button:visited
+                    text-decoration none 
+                    color color-1
+                    background-color color-3
+                    padding 0.5rem
+                    border-radius 0.4rem
+                    max-width 80px
+                    font-weight 500
+                    margin-bottom 0.4rem
+                    width 100%
+                    display block
+                    text-align center
+
+    .recipe-details 
+        padding 2rem
+        margin 2rem auto   
+        max-width 920px
+        width 100%
+
+        .recipe-name
+            font-size 2.5rem
+            font-weight 500
+            margin-bottom 0.8rem
+
+        .time-taking
+            display flex
+            gap 0.5rem
+            margin-bottom 1rem
+            border-bottom 2px solid color-5
+
+            .icon 
+                width 20px
+                height 20px
+
+                &:not(:first-child)
+                    margin-left 0.8rem
+
+        img
+            width 100%
+            height 500px
+            object-fit cover
+            border-radius 10px
+            margin-bottom 1rem
+
+        h2 
+            font-weight 500
+            font-size 2rem
+            margin-bottom 0.8rem
+
+    .ingredients 
+        margin-bottom 1.5rem
+
+        label 
+            display block
+            margin-bottom 0.8rem
+
+        input
+            width 20px
+            height 20px
+            vertical-align middle
+            accent-color color-3
+            cursor pointer
+
+            span
+                transition text-decoration 0.3s ease
+
+            &:checked + span
+                text-decoration line-through
+                color gray
+
+    ol
+        list-style none
+        counter-reset step
+
+        li
+            counter-increment step
+            position relative
+            padding-left 2.5rem
+            margin-bottom 0.8rem
+
+            &::before
+                content counter(step) "."
+                position absolute
+                left 0
+                top 0.1rem
+                background-color color-3
+                color color-1
+                height 25px
+                width 25px
+                border-radius 50%
+                font-weight 600
+                font-size 1rem
+                text-align center
