@@ -1,6 +1,6 @@
 # 🥘 Recipe Application
 
-Welcome to **Nuxtcipes**, a dynamic recipe web application built with HTML, CSS, and JavaScript. This project fetches real-time recipe data using a third-party API and presents it with an interactive and responsive user interface.
+Welcome to **Recipe Application**, a dynamic recipe web application built with HTML, CSS, and JavaScript. This project fetches real-time recipe data using a third-party API and presents it with an interactive and responsive user interface.
 
 It includes features like individual recipe pages, dynamic checklists, and a clean layout adaptable to different screen sizes. Stylus is used as the CSS preprocessor for enhanced styling capabilities.
 
